@@ -1,99 +1,5 @@
-/*  import java.util.ArrayList;
-// import java.util.Scanner;
-
-// class Student {
-//     String name;
-//     int rollNo;
-//     String course;
-
-//     Student(String name, int rollNo, String course) {
-//         this.name = name;
-//         this.rollNo = rollNo;
-//         this.course = course;
-//     }
-
-//     void display() {
-//         System.out.println("Name: " + name);
-//         System.out.println("Roll No: " + rollNo);
-//         System.out.println("Course: " + course);
-//     }
-// }
-
-// public class StudentManagementSystem {
-//     static ArrayList<Student> studentList = new ArrayList<>();
-//     static Scanner scanner = new Scanner(System.in);
-
-//     public static void main(String[] args) {
-//         int choice;
-
-//         do {
-//             System.out.println("\n---- Student Record Management ----");
-//             System.out.println("1. Add Student");
-//             System.out.println("2. View Students");
-//             System.out.println("3. Delete Student");
-//             System.out.println("4. Exit");
-//             System.out.print("Enter choice: ");
-//             choice = scanner.nextInt();
-
-//             switch (choice) {
-//                 case 1 -> addStudent();
-//                 case 2 -> viewStudents();
-//                 case 3 -> deleteStudent();
-//                 case 4 -> System.out.println("Exiting...");
-//                 default -> System.out.println("Invalid choice!");
-//             }
-//         } while (choice != 4);
-//     }
-
-//     static void addStudent() {
-//         scanner.nextLine();  // Clear buffer
-//         System.out.print("Enter name: ");
-//         String name = scanner.nextLine();
-//         System.out.print("Enter roll number: ");
-//         int rollNo = scanner.nextInt();
-//         scanner.nextLine();  // Clear buffer
-//         System.out.print("Enter course: ");
-//         String course = scanner.nextLine();
-
-//         studentList.add(new Student(name, rollNo, course));
-//         System.out.println("Student added successfully!");
-//     }
-
-//     static void viewStudents() {
-//         if (studentList.isEmpty()) {
-//             System.out.println("No student records found.");
-//         } else {
-//             for (Student s : studentList) {
-//                 System.out.println("\n--- Student ---");
-//                 s.display();
-//             }
-//         }
-//     }
-
-//     static void deleteStudent() {
-//         System.out.print("Enter roll number to delete: ");
-//         int rollNo = scanner.nextInt();
-//         Student toRemove = null;
-
-//         for (Student s : studentList) {
-//             if (s.rollNo == rollNo) {
-//                 toRemove = s;
-//                 break;
-//             }
-//         }
-
-//         if (toRemove != null) {
-//             studentList.remove(toRemove);
-//             System.out.println("Student record deleted.");
-//         } else {
-//             System.out.println("Student not found.");
-//         }
-//     }
-// }
-
-*/
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 class Student {
     private int id;
@@ -138,7 +44,7 @@ public class StudentRecordManagementSystem {
             System.out.println("5. Exit");
             System.out.print("Choose an option: ");
             choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1 -> addStudent();
